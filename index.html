@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>TEXT ENCYPTION & DECRYPTION</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>🔐Text Encryption & Decryption</h1>
+            <div class="section">
+                <h2>Encrypt Your Text</h2>
+                <textarea id="encryptInput" placeholder="Enter Your Message..."></textarea>
+                <button onclick="encryptText()">Encrypt</button>
+                <div id="encryptOutput" class="output-box">Encrypted Text Will appear here</div>
+                <button class="copy-btn" onclick="copyToClipboard('encryptOutput')">Copy Encrypted text</button>
+
+            </div>
+            <div class="Section">
+                <h2>Decrypt Your Text</h2>
+                <textarea id="decryptInput" placeholder="Paste Your Encrypted Message here..."></textarea>
+                <button onclick="decryptText()">Decrypt</button>
+                <div id="decryptOutput" class="output-box">Decrypted text will appear here</div>
+                <button class="copy-btn" onclick="copyToClipboard('decryptOutput')">Copy Decrypted Text</button>
+
+            </div>
+            <div class="info">
+                <p>Using Base64 Encoding</p>
+                <p>Created By ❤️ From Roshanpreet Singh Dhiman</p>
+            </div> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
